@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dagmawit's Blog</title>
+    <style>
+      /* Just a bit of spacing */
+      #posts-container > div {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Blog</h1>
+
+    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+      <img src="p22.jpg" alt="Hermela's Profile Photo" 
+           style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+      <div>
+        <h3 style="margin: 0;">By Dagmawit Gebreweld</h3>
+        <p style="margin: 2px 0;">Published on June 26, 2025</p>
+      </div>
+    </div>
+
+    <p>Hello and welcome to my blog. I'm Dagmawit, a software engineering student who loves learning, creating, and growing.</p>
+    <p>This is a space where I share my thoughts, projects, and moments from my journey in tech and life.</p>
+
+    <h2>Leave a Comment</h2>
+    <form id="comment-form">
+      <input type="text" id="username" placeholder="Your name" required /><br><br>
+      <textarea rows="3" id="comment" placeholder="Your comment..." required></textarea><br><br>
+      <button type="submit">Post Comment</button>
+    </form>
+
+    <div id="comment-section">
+      <h3>Comments</h3>
+      <ul id="comment-list"></ul>
+    </div>
+
+    <hr style="margin: 40px 0;" />
+
+    <h2>Recent Blog Posts</h2>
+    <div id="posts-container">
+      <!-- Posts fetched from API will appear here -->
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
